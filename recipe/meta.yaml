@@ -11,7 +11,7 @@ source:
   sha256: 7aa19637a52e667b4b79fe72f4e5325776c027d6ed62d2a3766682d72166daf2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools_scm
   run:
     - asdf
     - numpy
