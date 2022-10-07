@@ -18,15 +18,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools_scm
   run:
     - asdf
     - numpy
     - pandas
-    - python >=3.6
+    - python >=3.7
     - scipy
     - tqdm
+    - uhi
 
 test:
   imports:
