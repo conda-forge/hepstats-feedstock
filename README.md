@@ -1,11 +1,11 @@
-About hepstats
-==============
+About hepstats-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hepstats-feedstock/blob/main/LICENSE.txt)
 
 Home: https://scikit-hep.org/hepstats/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hepstats-feedstock/blob/main/LICENSE.txt)
 
 Summary: statistics tools and utilities
 
@@ -148,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@chrisburr](https://github.com/chrisburr/)
+* [@jonas-eschle](https://github.com/jonas-eschle/)
 
