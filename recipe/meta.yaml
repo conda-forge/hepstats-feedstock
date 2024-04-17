@@ -1,5 +1,5 @@
 {% set name = "hepstats" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hepstats-{{ version }}.tar.gz
-  sha256: dae50a739afb4e80c4118bbd13ff1c959d9de96b45fd9cab31a75f4b96b66288
+  sha256: ebb890496d7aebbf1d717de15d073be31d6775065308a4e0f263ed4051992b3f
 
 build:
   number: 0
