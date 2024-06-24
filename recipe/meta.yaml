@@ -28,6 +28,7 @@ requirements:
     - scipy
     - tqdm
     - uhi
+    - zfit
 
 test:
   imports:
