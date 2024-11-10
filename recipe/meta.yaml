@@ -19,8 +19,8 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - hatchling
-    - hatch.vcs
+    - hatchling >1.10.0
+    - hatch-vcs
   run:
     - asdf
     - numpy
