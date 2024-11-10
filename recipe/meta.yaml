@@ -30,7 +30,7 @@ requirements:
     - tqdm
     - uhi
   run_constrained:
-    - zfit >= 0.20.0
+    - zfit >=0.20.0
 
 test:
   imports:
