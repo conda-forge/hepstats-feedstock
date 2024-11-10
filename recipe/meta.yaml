@@ -29,7 +29,7 @@ requirements:
     - scipy
     - tqdm
     - uhi
-  run_constraint:
+  run_constrained:
     - zfit >= 0.20.0
 
 test:
