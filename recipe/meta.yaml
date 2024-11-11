@@ -1,5 +1,5 @@
 {% set name = "hepstats" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hepstats-{{ version }}.tar.gz
-  sha256: ebb890496d7aebbf1d717de15d073be31d6775065308a4e0f263ed4051992b3f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hepstats-{{ version }}.tar.gz
+  sha256: 5c5af54a845332e9e2f27d5899c680f9f425f16ab9e16683d1bf80dd9ca8ec14
 
 build:
   number: 0
@@ -18,17 +18,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
-    - setuptools_scm
+    - python {{ python_min }}
+    - hatchling >1.10.0
+    - hatch-vcs
   run:
     - asdf
     - numpy
     - pandas
-    - python >=3.9
+    - python >={{ python_min }}
     - scipy
     - tqdm
     - uhi
-    - zfit
+  run_constrained:
+    - zfit >=0.20.0
 
 test:
   imports:
@@ -38,6 +40,8 @@ test:
     - pip check
   requires:
     - pip
+    - zfit
+    - python {{ python_min }}
 
 about:
   home: https://scikit-hep.org/hepstats/
