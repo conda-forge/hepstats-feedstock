@@ -54,5 +54,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - jonas-eschle
-    - chrisburr
+    - scikit-hep
