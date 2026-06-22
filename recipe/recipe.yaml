@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/hepstats-${{ version }}.tar.gz
-  sha256: cf929871d45e338492eef585faaaa23eff93b200b4787d6b6181dc81f2607be7
+  sha256: e4ff2a592f24f937aea30f5e049388a536ca2472c853b6c0dade5cda77be7189
 
 build:
   number: 1
