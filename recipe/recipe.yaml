@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: hepstats
-  version: "0.10.0"
+  version: "0.10.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/hepstats-${{ version }}.tar.gz
-  sha256: e4ff2a592f24f937aea30f5e049388a536ca2472c853b6c0dade5cda77be7189
+  sha256: 6bc79c07f1bb68233f68075320c9c738c720a8d75c94c7211ae919e88e6cc9e9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
